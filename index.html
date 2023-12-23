@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Maven Shop Admin</title>
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -16,45 +18,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
+    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
-    <style>
-        .nav-link {
-            color: black;
-        }
-
-        .bg-pink {
-            background-color: #fbd6d6;
-        }
-
-        .table-arrow:hover {
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .edit,
-        .delete {
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        .bg-gray {
-            background-color: #d9d9d9;
-        }
-
-        .nav-link:hover,
-        .active {
-            color: red;
-        }
-
-        .container-fluid {
-            height: 100vh;
-        }
-
-        nav {
-            height: 100vh;
-        }
-    </style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -126,8 +95,6 @@
                     </div>
                 </div>
             </main>
-
-
 
             <!-- Modal -->
             <!-- User Modal -->
@@ -344,7 +311,7 @@
 
         let dataFromAPI = getFakeDataFromAPI(screenType);
 
-        // Data will appear on UI here!
+        // Table will create here!
         createTable(dataFromAPI, screenType);
     </script>
 </body>

@@ -1,0 +1,35 @@
+.nav-link {
+    color: black;
+}
+
+.bg-pink {
+    background-color: #fbd6d6;
+}
+
+.table-arrow:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.edit,
+.delete {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.bg-gray {
+    background-color: #d9d9d9;
+}
+
+.nav-link:hover,
+.active {
+    color: red;
+}
+
+.container-fluid {
+    height: 100vh;
+}
+
+nav {
+    height: 100vh;
+}
