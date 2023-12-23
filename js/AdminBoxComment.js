@@ -79,7 +79,7 @@ class AdminBoxComment {
     }
 
     static create(formData) {
-        const apiUrl = 'http://192.168.0.134:8080/comment';
+        const apiUrl = 'http://127.0.0.1/:8080/comment';
 
         let token = localStorage.getItem('token');
 
