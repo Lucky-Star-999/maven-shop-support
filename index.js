@@ -147,7 +147,7 @@ function makeCreateButton(screenType) {
             createButton.innerHTML = ``;
             break;
         case "comments":
-            createButton.innerHTML = ``;
+            createButton.innerHTML = `<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createCommentsButton">Add Comment</button>`;
             break;
     }
 }

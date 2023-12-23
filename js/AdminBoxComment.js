@@ -79,8 +79,38 @@ class AdminBoxComment {
     }
 
     static create(formData) {
-        alert(
-            `Comment edited!`
-        );
+        const apiUrl = 'http://192.168.0.134:8080/comment';
+
+        let token = localStorage.getItem('token');
+
+        const bearerToken = token;
+
+        const params = {
+            id: formData.commentId,
+            id_blog: formData.commentId,
+            name: formData.commentId,
+            content: formData.commentId
+        };
+
+        const paramString = new URLSearchParams(params).toString();
+
+        console.log(token);
+
+        console.log(paramString);
+
+        fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Authorization': `Bearer ${bearerToken}`,
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: paramString
+            })
+            .then(response => {
+                return response.json();
+            })
+            .then(dataFromAPI => {
+                console.log(dataFromAPI);
+            });
     }
 }
